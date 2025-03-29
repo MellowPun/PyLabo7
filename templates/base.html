@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+</head>
+<body>
+    <ul id="navigation">
+    {% for link in links %}
+        <li><a href="{{ link }}">{{ link.rstrip('.html') }}</a></li>
+    {% endfor %}
+    </ul>
+    {{ page }}
+    {# a comment #}
+</body>
+</html>
